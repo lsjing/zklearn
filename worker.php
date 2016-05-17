@@ -26,7 +26,7 @@ class Worker extends Zookeeper {
 		$this->znode = $this->create( self::CONTAINER . '/w-',
 				null,
 				$this->acl,
-				Zookeeper::<span class="KSFIND_CLASS" id="0KSFindDIV">EPHEMER</span>AL | Zookeeper::SEQUENCE );
+				Zookeeper::EPHEMERAL | Zookeeper::SEQUENCE );
 
 		$this->znode = str_replace( self::CONTAINER .'/', '', $this->znode );
 
