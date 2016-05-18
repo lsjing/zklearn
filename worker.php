@@ -1,6 +1,6 @@
 <?php
  
-class Worker extends Zookeeper {
+class Xworker extends Zookeeper {
 
 	const CONTAINER = '/cluster';
 
@@ -107,5 +107,5 @@ class Worker extends Zookeeper {
 
 }
 
-$worker = new Worker( '127.0.0.1:2181' );
+$worker = new Xworker( '127.0.0.1:2181' );
 $worker->run();
